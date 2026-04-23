@@ -10,39 +10,40 @@ Der Code für beide Klassen ist bereits vorhanden. Sie haben bereits ein Erschei
 
 (Das Klassendiagramm gibt es nur auf Artemis)
 
-```plantuml
+
 @startuml Gassi Klassendiagramm
+
+skinparam classAttributeIconSize 0
+hide circle
+hide empty methods
+
 class Mensch {
-    - grafikGruppe: Group
-    - meinHund: Hund
-    + Mensch(hund: Hund)
-    + gassiGehen(): void
-    + hundRufen(): void
-    + getX(): double
-    + getY(): double
-    - bewegeSichZuZiel(x: double, y: double): void
+    + Mensch(Hund hund)
+    + double getX()
+    + double getY()
+    + void gassiGehen()
+    + void hundRufen()
 }
 
 class Hund {
-    - group: Group
     + Hund()
-    + beiFuss(herrchen: Mensch): void
-    + getX(): double
-    + getY(): double
-    + zuPositionLaufen(x: double, y: double): void
+    + double getX()
+    + double getY()
+    + void beiFuss(Mensch herrchen)
+    + void zuPositionLaufen(double x, double y)
 }
 
-class World {
-    + World(breite: int, hoehe: int)
-    + getWidth(): int
-    + getHeight(): int
+class Group {
+    + Group()
+    + void add(Shape shape)
+    + void move(double dx, double dy)
 }
 
-Mensch --> Hund : hat einen
-Mensch --> Group : nutzt
-Hund --> Group : nutzt
+Mensch --> Hund : meinHund
+Mensch --> Group : grafikGruppe
+Hund --> Group : group
 @enduml
-```
+
 
 ---
 
