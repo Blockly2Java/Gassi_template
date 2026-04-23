@@ -20,7 +20,7 @@
         },
         {
           "type": "logic_negate",
-          "active": true
+          "active": false
         },
         {
           "type": "logic_boolean",
@@ -28,7 +28,7 @@
         },
         {
           "type": "logic_null",
-          "active": true
+          "active": false
         },
         {
           "type": "logic_ternary",
@@ -50,7 +50,7 @@
         },
         {
           "type": "controls_for",
-          "active": true
+          "active": false
         },
         {
           "type": "controls_forEach",
@@ -58,7 +58,7 @@
         },
         {
           "type": "controls_flow_statements",
-          "active": true
+          "active": false
         }
       ]
     },
@@ -88,11 +88,11 @@
         },
         {
           "type": "math_number_property",
-          "active": true
+          "active": false
         },
         {
           "type": "math_round",
-          "active": true
+          "active": false
         },
         {
           "type": "math_on_list",
@@ -100,11 +100,11 @@
         },
         {
           "type": "math_modulo",
-          "active": true
+          "active": false
         },
         {
           "type": "math_constrain",
-          "active": true
+          "active": false
         },
         {
           "type": "math_random_int",
@@ -112,11 +112,11 @@
         },
         {
           "type": "math_random_float",
-          "active": true
+          "active": false
         },
         {
           "type": "math_atan2",
-          "active": true
+          "active": false
         }
       ]
     },
@@ -138,7 +138,7 @@
         },
         {
           "type": "text_prompt_ext",
-          "active": true
+          "active": false
         },
         {
           "type": "text_multiline",
@@ -154,43 +154,39 @@
         },
         {
           "type": "text_length",
-          "active": true
+          "active": false
         },
         {
           "type": "text_isEmpty",
-          "active": true
+          "active": false
         },
         {
-          "type": "text_indexOf",
-          "active": true
-        },
-        {
-          "type": "text_charAt",
-          "active": true
+          "type": "variables_get",
+          "active": false
         },
         {
           "type": "text_getSubstring",
-          "active": true
+          "active": false
         },
         {
           "type": "text_changeCase",
-          "active": true
+          "active": false
         },
         {
           "type": "text_trim",
-          "active": true
+          "active": false
         },
         {
           "type": "text_count",
-          "active": true
+          "active": false
         },
         {
           "type": "text_replace",
-          "active": true
+          "active": false
         },
         {
           "type": "text_reverse",
-          "active": true
+          "active": false
         }
       ]
     },
@@ -215,11 +211,7 @@
           "active": true
         },
         {
-          "type": "lists_indexOf",
-          "active": true
-        },
-        {
-          "type": "lists_getIndex",
+          "type": "variables_get",
           "active": true
         },
         {
@@ -246,7 +238,7 @@
     },
     {
       "name": "Farben",
-      "active": true,
+      "active": false,
       "blocks": [
         {
           "type": "colour_picker",
@@ -286,11 +278,17 @@
       "subcategories": [
         {
           "name": "Instanz-Attribute",
-          "active": true
+          "active": true,
+          "blocks": [
+            {
+              "type": "java_this",
+              "active": true
+            }
+          ]
         },
         {
           "name": "Klassen-Attribute",
-          "active": true
+          "active": false
         }
       ]
     },
@@ -347,13 +345,13 @@
             },
             {
               "type": "java_static_method_return",
-              "active": true
+              "active": false
             }
           ]
         },
         {
           "name": "Externe Klassen-Methoden",
-          "active": true,
+          "active": false,
           "blocks": [
             {
               "type": "java_ext_static_call_noreturn",
@@ -381,11 +379,15 @@
         },
         {
           "type": "java_extends",
-          "active": true
+          "active": false
+        },
+        {
+          "type": "gfx_extends",
+          "active": false
         },
         {
           "type": "java_super_call",
-          "active": true
+          "active": false
         }
       ]
     },
@@ -394,15 +396,27 @@
       "active": true,
       "blocks": [
         {
-          "type": "gfx_extends",
+          "type": "gfx_new_world",
           "active": true
         },
         {
-          "type": "java_local_var_set",
+          "type": "gfx_new_shape",
           "active": true
+        },
+        {
+          "type": "gfx_new_text",
+          "active": false
+        },
+        {
+          "type": "gfx_new_polygon",
+          "active": false
         },
         {
           "type": "gfx_polygon_add_point",
+          "active": false
+        },
+        {
+          "type": "gfx_new_group",
           "active": true
         },
         {
@@ -453,23 +467,23 @@
         },
         {
           "type": "gfx_set_text_content",
-          "active": true
+          "active": false
         },
         {
           "type": "gfx_set_alignment",
-          "active": true
+          "active": false
         },
         {
           "type": "gfx_set_cursor",
-          "active": true
+          "active": false
         },
         {
           "type": "gfx_default_fill_color",
-          "active": true
+          "active": false
         },
         {
           "type": "gfx_default_visibility",
-          "active": true
+          "active": false
         }
       ]
     },
@@ -487,15 +501,15 @@
         },
         {
           "type": "gfx_rotate_around",
-          "active": true
+          "active": false
         },
         {
           "type": "gfx_scale",
-          "active": true
+          "active": false
         },
         {
           "type": "gfx_scale_around",
-          "active": true
+          "active": false
         },
         {
           "type": "gfx_mirror_x",
@@ -507,16 +521,16 @@
         },
         {
           "type": "gfx_line_set_points",
-          "active": true
+          "active": false
         }
       ]
     },
     {
       "name": "Grafik: Turtle",
-      "active": true,
+      "active": false,
       "blocks": [
         {
-          "type": "java_local_var_set",
+          "type": "gfx_new_turtle",
           "active": true
         },
         {

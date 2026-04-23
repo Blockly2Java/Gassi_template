@@ -14,6 +14,10 @@ public class Main {
      * gestartet, wenn du auf 'Play' drückst.
      */
     public static void main() {
+        World world = new World(1600, 1600);
+        Hund hund = new Hund();
+        Mensch mensch = new Mensch(hund);
+        mensch.gassiGehen();
     }
 
 }

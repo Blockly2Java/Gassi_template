@@ -5,8 +5,8 @@
       {
         "type": "java_static_method_noreturn",
         "id": "0-~]xj!ER5LuqkjtzKSY",
-        "x": 106,
-        "y": 98,
+        "x": -421,
+        "y": -402,
         "extraState": "<mutation xmlns=\"http://www.w3.org/1999/xhtml\"></mutation>",
         "icons": {
           "comment": {
@@ -18,8 +18,161 @@
         },
         "fields": {
           "NAME": "main"
+        },
+        "inputs": {
+          "STACK": {
+            "block": {
+              "type": "java_local_var_set",
+              "id": "V`WdBL7p46D9Z}dn@r@u",
+              "fields": {
+                "VAR": {
+                  "id": "(fS-%U7Y3ktPTn4%$nAx"
+                }
+              },
+              "inputs": {
+                "VALUE": {
+                  "block": {
+                    "type": "gfx_new_world",
+                    "id": "^n7zuZs@JF2Bjo.4/!oP",
+                    "inputs": {
+                      "WIDTH": {
+                        "shadow": {
+                          "type": "math_number",
+                          "id": "HvaxZ$_pp}/f!AcU%D~#",
+                          "fields": {
+                            "NUM": 1600
+                          }
+                        }
+                      },
+                      "HEIGHT": {
+                        "shadow": {
+                          "type": "math_number",
+                          "id": "3YbKJS1k8^P:i2DV$OJ(",
+                          "fields": {
+                            "NUM": 1600
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "next": {
+                "block": {
+                  "type": "java_local_var_set",
+                  "id": "aE5Ynh8jorp(;(i%%gbL",
+                  "fields": {
+                    "VAR": {
+                      "id": "B4SR/9:=,A3kk[gWTd+-"
+                    }
+                  },
+                  "inputs": {
+                    "VALUE": {
+                      "block": {
+                        "type": "callconstructor",
+                        "id": "WU,`(w=xcZME,[WhuXCF",
+                        "extraState": {
+                          "constructorValue": "Hund:::"
+                        },
+                        "fields": {
+                          "CONSTRUCTOR_CLASS": "Hund:::"
+                        }
+                      }
+                    }
+                  },
+                  "next": {
+                    "block": {
+                      "type": "java_local_var_set",
+                      "id": "r1fGEwJh8LFjy$VRj;-{",
+                      "fields": {
+                        "VAR": {
+                          "id": "Busce^ctEqx[[0)tx[Xw"
+                        }
+                      },
+                      "inputs": {
+                        "VALUE": {
+                          "block": {
+                            "type": "callconstructor",
+                            "id": "mzRDR`_-y1VO6RojB.ea",
+                            "extraState": {
+                              "constructorValue": "Mensch:::Hund hund"
+                            },
+                            "fields": {
+                              "CONSTRUCTOR_CLASS": "Mensch:::Hund hund"
+                            },
+                            "inputs": {
+                              "ARG_Hund hund": {
+                                "block": {
+                                  "type": "java_local_var_get",
+                                  "id": "*Aa|FUe;m,txX#BkW#%/",
+                                  "fields": {
+                                    "VAR": {
+                                      "id": "B4SR/9:=,A3kk[gWTd+-"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "next": {
+                        "block": {
+                          "type": "java_obj_method_call_noreturn",
+                          "id": "8^n|D};NM$}6@`6d,ZNn",
+                          "extraState": "<mutation xmlns=\"http://www.w3.org/1999/xhtml\" args=\"0\" method=\"gassiGehen\"></mutation>",
+                          "fields": {
+                            "METHOD": "gassiGehen"
+                          },
+                          "inputs": {
+                            "OBJ": {
+                              "shadow": {
+                                "type": "java_this",
+                                "id": "o1XF+)]-Z)GteMxJmDbC"
+                              },
+                              "block": {
+                                "type": "java_local_var_get",
+                                "id": "iv/f_vkiN)aP;3R=Rvk$",
+                                "fields": {
+                                  "VAR": {
+                                    "id": "Busce^ctEqx[[0)tx[Xw"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     ]
-  }
+  },
+  "variables": [
+    {
+      "name": "hund",
+      "id": "B4SR/9:=,A3kk[gWTd+-",
+      "type": "local"
+    },
+    {
+      "name": "world",
+      "id": "(fS-%U7Y3ktPTn4%$nAx",
+      "type": "local"
+    },
+    {
+      "name": "mensch",
+      "id": "Busce^ctEqx[[0)tx[Xw",
+      "type": "local"
+    },
+    {
+      "name": "i",
+      "id": "IXKVZrkGJZ))fUQ.1c?-",
+      "type": "local"
+    }
+  ]
 }
