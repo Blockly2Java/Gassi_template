@@ -8,9 +8,10 @@ Der Code für beide Klassen ist bereits vorhanden. Sie haben bereits ein Erschei
 
 ## Klassendiagramm
 
-![CD](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&src=https://raw.githubusercontent.com/Blockly2Java/Gassi/refs/heads/migration/shared_resources/cd.puml)
-
 [task][Strukturtests](strukturTests)
+
+![CD](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&src=https://raw.githubusercontent.com/Blockly2Java/Gassi/migration/shared_resources/cd.puml)
+
 
 
 
