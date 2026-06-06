@@ -1,0 +1,20 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -Xms2g -Xmx4g",
+    "java.import.gradle.enabled": true,
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.server.launchMode": "Standard",
+    "java.project.importOnFirstTimeOpen": "automatic",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "files.exclude": {
+        "**/.gradle": true,
+        "**/build": true
+    },
+    "search.exclude": {
+        "**/build": true,
+        "**/.gradle": true
+    }
+}

@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
 }
 
 java {
@@ -29,8 +30,18 @@ application {
     mainClass = 'MainLauncher'
 }
 
-// Generate a thin launcher so 'gradle run' works.
-// Student's Main uses `public static void main()` (no String[] args).
+javafx {
+    version = '26'
+    modules = ['javafx.controls']
+}
+
+run {
+    jvmArgs = [
+        '--enable-native-access=ALL-UNNAMED',
+        '--add-opens=java.base/java.lang=ALL-UNNAMED',
+        '--add-opens=java.base/java.util=ALL-UNNAMED'
+    ]
+}
 task generateLauncher {
     def outFile = file("$buildDir/generated/launcher/MainLauncher.java")
     outputs.file outFile
@@ -41,3 +52,4 @@ task generateLauncher {
 }
 
 compileJava.dependsOn generateLauncher
+run.dependsOn compileJava

@@ -10,6 +10,42 @@ Der Code für beide Klassen ist bereits vorhanden. Sie haben bereits ein Erschei
 
 (Das Klassendiagramm gibt es nur auf Artemis)
 
+[task][Strukturtests](strukturTests)
+
+@startuml Gassi Klassendiagramm
+
+skinparam classAttributeIconSize 0
+hide circle
+hide empty methods
+
+class Mensch {
+    + Mensch(Hund hund)
+    + double getX()
+    + double getY()
+    + void gassiGehen()
+    + void hundRufen()
+}
+
+class Hund {
+    + Hund()
+    + double getX()
+    + double getY()
+    + void beiFuss(Mensch herrchen)
+    + void zuPositionLaufen(double x, double y)
+}
+
+class Group {
+    + Group()
+    + void add(Shape shape)
+    + void move(double dx, double dy)
+}
+
+Mensch --> Hund : -meinHund
+Mensch --> Group : -grafikGruppe
+Hund --> Group : -group
+@enduml
+
+
 ---
 
 ## Beschreibung - Vorlage
@@ -23,10 +59,10 @@ Der Code für beide Klassen ist bereits vorhanden. Sie haben bereits ein Erschei
 ---
 
 ## TODO - Der Spaziergang
-- **Mensch.getX(), Mensch.getY()**: Damit der Hund später nachschauen kann, wo der Mensch ist, brauchen wir Getter-Methoden für die Koordinaten des Menschen. Tipp: Nutze die Koordinaten der `grafikGruppe`.
-- **Hund.beiFuss(Mensch herrchen)** — soll den Hund veranlassen, zur Position des Mensch-Objekts zu laufen, das als Parameter übergeben wird (Tipp: Nutze `zuPositionLaufen(double x, double y)`).
-- **Mensch.gassiGehen()** soll den Menschen zu einem zufälligen Punkt bewegen (Empfehlung: zufällige Bewegung zwischen 500 und 1400 Einheiten pro Koordinaten-Richtung vom Startpunkt aus) und anschließend den Hund rufen.
-- **Mensch.hundRufen()** — soll den Hund zum Menschen rufen (nutze `beiFuss` und übergib ein geeignetes Mensch-Objekt als Parameter).
+- [task][`Mensch.getX()`, `Mensch.getY()`](testMenschGetX,testMenschGetY) Damit der Hund später nachschauen kann, wo der Mensch ist, brauchen wir Getter-Methoden für die Koordinaten des Menschen. Tipp: Nutze die Koordinaten der `grafikGruppe`.
+- [task][`Hund.beiFuss(Mensch herrchen)`](testBeiFuss) — soll den Hund veranlassen, zur Position des Mensch-Objekts zu laufen, das als Parameter übergeben wird (Tipp: Nutze `zuPositionLaufen(double x, double y)`).
+- [task][`Mensch.gassiGehen()`](testGassiGehen) soll den Menschen zu einem zufälligen Punkt bewegen (Empfehlung: zufällige Bewegung zwischen 300 und 800 Einheiten pro Koordinaten-Richtung vom Startpunkt aus) und anschließend den Hund rufen.
+- [task][`Mensch.hundRufen()`](testHundRufen) — soll den Hund zum Menschen rufen (nutze `beiFuss` und übergib ein geeignetes Mensch-Objekt als Parameter).
 
 
 
