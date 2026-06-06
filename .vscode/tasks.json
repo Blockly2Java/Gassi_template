@@ -4,11 +4,16 @@
         {
             "label": "Start Gradle Debug Run",
             "type": "shell",
-            "command": "./gradlew",
-            "args": [
-                "run",
-                "--debug-jvm"
-            ],
+            "windows": {
+                "command": "gradlew.bat run --debug-jvm"
+            },
+            "linux": {
+                "command": "./gradlew run --debug-jvm"
+            },
+            "osx": {
+                "command": "./gradlew run --debug-jvm"
+            },
+            "args": [],
             "isBackground": true,
             "presentation": {
                 "reveal": "always",
