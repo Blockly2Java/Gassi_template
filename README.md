@@ -8,42 +8,13 @@ Der Code für beide Klassen ist bereits vorhanden. Sie haben bereits ein Erschei
 
 ## Klassendiagramm
 
-(Das Klassendiagramm gibt es nur auf Artemis)
+![CD](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&src=https://raw.githubusercontent.com/Blockly2Java/Gassi/refs/heads/migration/shared_resources/cd.puml)
 
 [task][Strukturtests](strukturTests)
 
-@startuml Gassi Klassendiagramm
 
-skinparam classAttributeIconSize 0
-hide circle
-hide empty methods
 
-class Mensch {
-    + Mensch(Hund hund)
-    + double getX()
-    + double getY()
-    + void gassiGehen()
-    + void hundRufen()
-}
 
-class Hund {
-    + Hund()
-    + double getX()
-    + double getY()
-    + void beiFuss(Mensch herrchen)
-    + void zuPositionLaufen(double x, double y)
-}
-
-class Group {
-    + Group()
-    + void add(Shape shape)
-    + void move(double dx, double dy)
-}
-
-Mensch --> Hund : -meinHund
-Mensch --> Group : -grafikGruppe
-Hund --> Group : -group
-@enduml
 
 
 ---
