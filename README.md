@@ -8,7 +8,7 @@ Der Code für beide Klassen ist bereits vorhanden. Sie haben bereits ein Erschei
 
 ## Klassendiagramm
 
-[//]: #[task][](strukturTests())
+[//]: #[task][](structStructural[all])
 
 ![CD](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&src=https://raw.githubusercontent.com/Blockly2Java/Gassi/migration/shared_resources/cd.puml)
 
