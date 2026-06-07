@@ -1,3 +1,13 @@
+## Aufgabe starten: [blockly2java.de](https://blockly2java.de)
+
+| Token-URL kopieren | Klonen | URL einfügen |
+| :---: | :---: | :---: |
+|![b2j_img_1.png](https://github.com/Blockly2Java/Gassi/blob/migration/shared_resources/b2j_img_1.png?raw=true)|![b2j_img_2.png](https://github.com/Blockly2Java/Gassi/blob/migration/shared_resources/b2j_img_2.png?raw=true)|![b2j_img_3.png](https://github.com/Blockly2Java/Gassi/blob/migration/shared_resources/b2j_img_3.png?raw=true)|
+
+
+
+
+
 ## Aufgabe: Gassi gehen - Mensch und Hund in Bewegung
 
 In dieser Aufgabe programmieren wir einen Spaziergang zwischen Mensch und Hund. Der Hund soll seinem Herrchen beim Gassi gehen folgen, wenn er gerufen wird (Bei Fuß!).
@@ -8,7 +18,7 @@ Der Code für beide Klassen ist bereits vorhanden. Sie haben bereits ein Erschei
 
 ## Klassendiagramm
 
-[//]: #[task][](strukturTests)
+[//]: #[task][](structStructural[all])
 
 ![CD](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&src=https://raw.githubusercontent.com/Blockly2Java/Gassi/migration/shared_resources/cd.puml)
 
@@ -32,16 +42,16 @@ Der Code für beide Klassen ist bereits vorhanden. Sie haben bereits ein Erschei
 
 ## TODO - Der Spaziergang
 
-[//]: #[task][](testMenschGetX,testMenschGetY) 
+[//]: #[task][](testMenschGetX(),testMenschGetY()) 
 - `Mensch.getX()`, `Mensch.getY()`: Damit der Hund später nachschauen kann, wo der Mensch ist, brauchen wir Getter-Methoden für die Koordinaten des Menschen. Tipp: Nutze die Koordinaten der `grafikGruppe`.
 
-[//]: #[task][](testBeiFuss) 
+[//]: #[task][](testBeiFuss()) 
 - `Hund.beiFuss(Mensch herrchen)` — soll den Hund veranlassen, zur Position des Mensch-Objekts zu laufen, das als Parameter übergeben wird (Tipp: Nutze `zuPositionLaufen(double x, double y)`).
 
-[//]: #[task][](testGassiGehen) 
+[//]: #[task][](testGassiGehen()) 
 - `Mensch.gassiGehen()` — soll den Menschen zu einem zufälligen Punkt bewegen (Empfehlung: zufällige Bewegung zwischen 300 und 800 Einheiten pro Koordinaten-Richtung vom Startpunkt aus) und anschließend den Hund rufen.
 
-[//]: #[task][](testHundRufen) 
+[//]: #[task][](testHundRufen()) 
 - `Mensch.hundRufen()` — soll den Hund zum Menschen rufen (nutze `beiFuss` und übergib ein geeignetes Mensch-Objekt als Parameter).
 
 
