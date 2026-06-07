@@ -2,7 +2,7 @@
 
 | Token-URL kopieren | Klonen | URL einfügen |
 | :---: | :---: | :---: |
-|![b2j_img_1.png](https://github.com/Blockly2Java/Gassi/blob/migration/shared_resources/b2j_img_1.png?raw=true)|![b2j_img_2.png](https://github.com/Blockly2Java/Gassi/blob/migration/shared_resources/b2j_img_2.png?raw=true)|![b2j_img_3.png](https://github.com/Blockly2Java/Gassi/blob/migration/shared_resources/b2j_img_3.png?raw=true)|
+|![b2j_img_1.png](https://github.com/Blockly2Java/Gassi/blob/main/shared_resources/b2j_img_1.png?raw=true)|![b2j_img_2.png](https://github.com/Blockly2Java/Gassi/blob/main/shared_resources/b2j_img_2.png?raw=true)|![b2j_img_3.png](https://github.com/Blockly2Java/Gassi/blob/main/shared_resources/b2j_img_3.png?raw=true)|
 
 
 
@@ -20,7 +20,7 @@ Der Code für beide Klassen ist bereits vorhanden. Sie haben bereits ein Erschei
 
 [//]: #[task][](structStructural[all])
 
-![CD](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&src=https://raw.githubusercontent.com/Blockly2Java/Gassi/migration/shared_resources/cd.puml)
+![CD](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&src=https://raw.githubusercontent.com/Blockly2Java/Gassi/main/shared_resources/cd.puml)
 
 
 
