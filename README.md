@@ -1,7 +1,5 @@
 
-
-<details>
-<summary><b style="font-size:18px">Aufgabe starten: <a href="https://blockly2java.de">blockly2java.de</a></b></summary>
+<b style="font-size:18px">Aufgabe starten: <a href="https://blockly2java.de">blockly2java.de</a></b>
 
 <table style="width: 100%; table-layout: fixed;">
   <thead>
@@ -25,7 +23,6 @@
     </tr>
   </tbody>
 </table>
-</details>
 
 
 ---
