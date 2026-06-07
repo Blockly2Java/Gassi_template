@@ -7,6 +7,7 @@
 ---
 
 
+
 ## Aufgabe: Gassi gehen - Mensch und Hund in Bewegung
 
 In dieser Aufgabe programmieren wir einen Spaziergang zwischen Mensch und Hund. Der Hund soll seinem Herrchen beim Gassi gehen folgen, wenn er gerufen wird (Bei Fuß!).
