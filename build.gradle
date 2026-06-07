@@ -1,0 +1,55 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // B2J Graphics Library (provides World, Actor, etc. — default package)
+    implementation 'de.blockly2java:graphics:[0.1.0,)'
+}
+
+sourceSets {
+    main {
+        java { srcDirs 'src', "$buildDir/generated/launcher" }
+    }
+}
+
+application {
+    // Student code uses Main.main() (no args). Thin launcher bridges this.
+    mainClass = 'MainLauncher'
+}
+
+javafx {
+    version = '26'
+    modules = ['javafx.controls']
+}
+
+run {
+    jvmArgs = [
+        '--enable-native-access=ALL-UNNAMED',
+        '--add-opens=java.base/java.lang=ALL-UNNAMED',
+        '--add-opens=java.base/java.util=ALL-UNNAMED'
+    ]
+}
+task generateLauncher {
+    def outFile = file("$buildDir/generated/launcher/MainLauncher.java")
+    outputs.file outFile
+    doLast {
+        outFile.parentFile.mkdirs()
+        outFile.text = 'public class MainLauncher { public static void main(String[] args) { Main.main(); } }'
+    }
+}
+
+compileJava.dependsOn generateLauncher
+run.dependsOn compileJava

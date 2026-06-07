@@ -1,0 +1,41 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start Gradle Debug Run",
+            "type": "shell",
+            "windows": {
+                "command": "gradlew.bat run --debug-jvm"
+            },
+            "linux": {
+                "command": "./gradlew run --debug-jvm"
+            },
+            "osx": {
+                "command": "./gradlew run --debug-jvm"
+            },
+            "args": [],
+            "isBackground": true,
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": [
+                {
+                    "pattern": [
+                        {
+                            "regexp": ".",
+                            "file": 1,
+                            "location": 2,
+                            "message": 3
+                        }
+                    ],
+                    "background": {
+                        "activeOnStart": true,
+                        "beginsPattern": "^.*Executing task.*run.*$",
+                        "endsPattern": "^.*Listening for transport dt_socket at address: 5005.*$"
+                    }
+                }
+            ]
+        }
+    ]
+}
