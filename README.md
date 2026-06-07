@@ -8,7 +8,7 @@ Der Code für beide Klassen ist bereits vorhanden. Sie haben bereits ein Erschei
 
 ## Klassendiagramm
 
-[//]: #[task][](strukturTests)
+[//]: #[task][](strukturTests())
 
 ![CD](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&src=https://raw.githubusercontent.com/Blockly2Java/Gassi/migration/shared_resources/cd.puml)
 
@@ -32,16 +32,16 @@ Der Code für beide Klassen ist bereits vorhanden. Sie haben bereits ein Erschei
 
 ## TODO - Der Spaziergang
 
-[//]: #[task][](testMenschGetX,testMenschGetY) 
+[//]: #[task][](testMenschGetX(),testMenschGetY()) 
 - `Mensch.getX()`, `Mensch.getY()`: Damit der Hund später nachschauen kann, wo der Mensch ist, brauchen wir Getter-Methoden für die Koordinaten des Menschen. Tipp: Nutze die Koordinaten der `grafikGruppe`.
 
-[//]: #[task][](testBeiFuss) 
+[//]: #[task][](testBeiFuss()) 
 - `Hund.beiFuss(Mensch herrchen)` — soll den Hund veranlassen, zur Position des Mensch-Objekts zu laufen, das als Parameter übergeben wird (Tipp: Nutze `zuPositionLaufen(double x, double y)`).
 
-[//]: #[task][](testGassiGehen) 
+[//]: #[task][](testGassiGehen()) 
 - `Mensch.gassiGehen()` — soll den Menschen zu einem zufälligen Punkt bewegen (Empfehlung: zufällige Bewegung zwischen 300 und 800 Einheiten pro Koordinaten-Richtung vom Startpunkt aus) und anschließend den Hund rufen.
 
-[//]: #[task][](testHundRufen) 
+[//]: #[task][](testHundRufen()) 
 - `Mensch.hundRufen()` — soll den Hund zum Menschen rufen (nutze `beiFuss` und übergib ein geeignetes Mensch-Objekt als Parameter).
 
 
