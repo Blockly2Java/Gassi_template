@@ -1,8 +1,27 @@
 ## Aufgabe starten: [blockly2java.de](https://blockly2java.de)
 
-| Token-URL kopieren | Klonen | URL einfügen |
-| :---: | :---: | :---: |
-|![b2j_img_1.png](https://github.com/Blockly2Java/Gassi/blob/main/shared_resources/b2j_img_1.png?raw=true)|![b2j_img_2.png](https://github.com/Blockly2Java/Gassi/blob/main/shared_resources/b2j_img_2.png?raw=true)|![b2j_img_3.png](https://github.com/Blockly2Java/Gassi/blob/main/shared_resources/b2j_img_3.png?raw=true)|
+<table style="width: 100%; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th style="width: 60%; text-align: center; vertical-align: middle; padding: 5px;">Token-URL kopieren</th>
+      <th style="width: 15%; text-align: center; vertical-align: middle; padding: 5px;">Klonen</th>
+      <th style="width: 30%; text-align: center; vertical-align: middle; padding: 5px;">URL einfügen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="width: 60%; text-align: center; vertical-align: middle; padding: 10px;">
+        <img src="https://github.com/Blockly2Java/Gassi/blob/main/shared_resources/b2j_img_1.png?raw=true" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+      </td>
+      <td style="width: 15%; text-align: center; vertical-align: middle; padding: 10px;">
+        <img src="https://github.com/Blockly2Java/Gassi/blob/main/shared_resources/b2j_img_2.png?raw=true" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+      </td>
+      <td style="width: 30%; text-align: center; vertical-align: middle; padding: 10px;">
+        <img src="https://github.com/Blockly2Java/Gassi/blob/main/shared_resources/b2j_img_3.png?raw=true" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 
 
